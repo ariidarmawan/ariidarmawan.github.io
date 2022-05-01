@@ -157,8 +157,12 @@ footer p i {
         margin-bottom: 50px;
     }
 
+    .left-box {
+        margin-bottom: 40px;
+    }
+
     .contact a {
-        margin: 35%;
+        margin: 30%;
     }
 }
 
