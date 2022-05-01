@@ -1,0 +1,179 @@
+
+html {
+    position: relative;
+}
+
+body {
+    font-family: "Rubik", arial;
+    margin-bottom: 100px;
+    margin-top: 30px;
+    background-color: #483D8B;
+}
+
+body, .jumbotron, .about, .portfolio, .contact {
+    background-color: #272934;
+    color: #fdffff;
+}
+
+a i {
+    margin-right: 10px;
+}
+
+    /* Jumbotron */
+.jumbotron {
+    height: 400px;
+    background-image: url('../img/header-bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0px -180px;
+    color: #fdffff;
+    overflow: hidden;
+}
+
+.jumbotron img {
+    width: 200px;
+    border: 5px solid rgb(228, 228, 228);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron h1, .jumbotron p {
+    text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
+}
+
+hr {
+    width: 250px;
+    border-top: 3px solid rgb(111, 111, 111);
+}
+    /* Akhir Jumbotron */
+
+    /* Section */
+section {
+    min-height: 600px;
+}
+
+.about h4 {
+    width: 100px;
+    height: 30px;
+    line-height: 27px;
+    border-radius: 10px;
+    border: #FF7F50 solid 2px;
+    text-shadow: 0 0 3px orange;
+    background-color: black;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.pKiri, .indo {
+    opacity: 0;
+    transform: translate(-50px, 0);
+    transition: 1s;
+}
+
+.pKanan, .eng {
+    opacity: 0;
+    transform: translate(50px, 0);
+    transition: 1s;
+}
+
+.pKiri, .pKanan {
+    width: 100%;
+    height: 100%;
+    background-color: hsl(216, 50%, 16%);
+    padding: 30px;
+    border-radius: 3%;
+    box-shadow: 0px 30px 5px -15px hsl(217, 54%, 11%);
+}
+
+.indo.indoMuncul,
+.eng.engMuncul, 
+.pKiri.pMuncul, 
+.pKanan.pMuncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+    /* Akhir Section */
+
+    /* Portfolio */
+.portfolio {
+    background-color: #a8bed4;
+}
+
+.portfolio .thumbnail {
+    opacity: 0;
+    transform: translate(0, -50px);
+    transition: .5s;
+}
+
+.portfolio .thumbnail.muncul {
+    opacity: 1;
+    transform: translate(0, 0px);
+}
+    /* Akhir Portfolio */
+
+
+.contact {
+    min-height: 800px;
+}
+
+.contact a {
+    margin: 39%;
+}
+
+.email {
+    width: 50px;
+    height: 50px;
+}
+
+
+    /* Footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(22, 22, 22);
+    color: rgb(201, 201, 201);
+    padding: 20px;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+footer a {
+    color: #0000CD;
+}
+
+footer p i {
+    color: red;
+}
+    /* Akhir footer */
+
+
+/* Responsive */
+
+@media(max-width : 600px) {
+    .about {
+        margin-bottom: 50px;
+    }
+
+    .contact a {
+        margin: 35%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
