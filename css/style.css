@@ -102,12 +102,14 @@ section {
     opacity: 0;
     transform: translate(0, -50px);
     transition: .5s;
+    margin-bottom: 40px;
 }
 
 .portfolio .thumbnail.muncul {
     opacity: 1;
     transform: translate(0, 0px);
 }
+
     /* Akhir Portfolio */
 
 
